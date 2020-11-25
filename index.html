@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.google.com/?query=Franklin+Gothic">
     <style>
         body {
             margin: 0;
@@ -61,7 +62,12 @@
             color: #000;
         }
 
-        a:hover {
+        .header-link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .header-link:hover {
             text-decoration: underline 2px #a48f64;
             text-underline-position: under;
         }
@@ -86,47 +92,122 @@
 
         #bottom {
             width: 100%;
-            height: 170px;
+            height: 220px;
             background-color: white;
 
         }
 
         .bottom-side {
             width: 50%;
-            height: 168px;
+            height: 148px;
             float: left;
         }
 
-        .logo-img-bottom {
-            width: 200px;
-            height: 170px;
-            float: right;
-            margin-right: 100px;
-            margin-top: 10px;
+        .subForms {
+            width: 500px;
+            height: 32px;
+            margin-left: 25px;
+            margin-top: 15px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .box {
-            width: 500px;
-            height: 40px;
-            text-align: center;
+        form {
+            display: inline !important;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+
+        }
+
+
+        input[type="text"],
+        input[type="email"] {
+            text-decoration: none;
+            border-radius: 0px;
+            background-color: rgb(255, 255, 255);
+            width: 170px;
+            height: 28px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #404040;
+            float: left;
             border: 1px solid black;
         }
 
-        ul li {
-            list-style-type: none;
-            display: inline;
-        }
-        input[type="text"],
-        input[type="email"]{
-            width: 100px;
-            height: 38px;
+        input[type="submit"] {
+            text-decoration: none;
+            border-radius: 0px;
+            background-color: #fff;
+            width: 95px;
+            height: 32px;
+            font-size: 14px;
+            color: #000;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium' !important;
+            letter-spacing: -1px;
+            cursor: pointer;
             float: left;
+            border: 1px solid black;
+
         }
-        input[type="submit"]{
-            width: 75px;
-            height: 38px;
-            text-align: center;
+
+        input[type="submit"]:hover {
+            color: #fff;
+            background-color: #a48f64;
+        }
+
+        .footer-links {
+            margin: 15px 0px 0px 25px;
+            width: 352px;
+            height: 30px;
+        }
+
+        .logo-img-bottom {
+            width: 220px;
+            height: 170px;
+            float: right;
+            margin-right: 140px;
+            margin-top: 10px;
+        }
+
+        .facebook-logo {
+            width: 30px;
+            height: 30px;
             float: left;
+            background-image: url('Pictures/facebook.png');
+            background-size: cover;
+            margin-right: 5px;
+        }
+
+        .instagram-logo {
+            width: 30px;
+            height: 30px;
+            float: left;
+            background-image: url('Pictures/instagram.png');
+            background-size: cover;
+            margin-right: 5px;
+        }
+
+        .twitter-logo {
+            width: 30px;
+            height: 30px;
+            float: left;
+            background-image: url('Pictures/twitter.png');
+            background-size: cover;
+            margin-right: 5px;
+        }
+
+        .footer-link {
+            width: 30px;
+            height: 30px;
+            text-decoration: underline;
+            font-size: 12px;
+            color: black;
+            line-height: 30px;
+            float: left;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -140,12 +221,12 @@
         </div>
         <div id="middle-up">
             <div id="buttons">
-                <div class="button center"><a href="#">News</a></div>
-                <div class="button center"><a href="#">About</a></div>
-                <div class="button center"><a href="#">Music</a></div>
-                <div class="button center"><a href="#">Books</a></div>
-                <div class="button center"><a href="#">Artwork</a></div>
-                <div class="button center"><a href="#">Store</a></div>
+                <div class="button center header-link"><a href="#">News</a></div>
+                <div class="button center header-link"><a href="#">About</a></div>
+                <div class="button center header-link"><a href="#">Music</a></div>
+                <div class="button center header-link"><a href="#">Books</a></div>
+                <div class="button center header-link"><a href="#">Artwork</a></div>
+                <div class="button center header-link"><a href="#">Store</a></div>
             </div>
         </div>
     </div>
@@ -154,19 +235,46 @@
     </div>
     <div id="bottom">
         <div class="bottom-side">
-            <div class="box">
-                <form method="GET">
-                    <ul>
-                        <li><input type="text" name="Name" placeholder="Name" required="required" /></li>
-                        <li><input type="email" name="Email" placeholder="Email" required="required" /></li>
-                        <li><input type="submit" name="OK" value="Subscribe" /></li>
-                    </ul>
+            <p style="width: 250px; height:24px; margin: 50px 0px 0px 25px; ">
+                Subscribe to email updates</p>
+
+            <div class="subForms">
+                <form action="#" method="get">
+                    <input type='text' name='Name' placeholder="Name" required="required" style="border-right: none;" />
+                    <input type='email' name='Email' placeholder="Email" required="required"
+                        style="border-right: none;" />
+                    <input type="submit" name="Ok" value="Subscribe" />
+
                 </form>
             </div>
+            <div class="footer-links">
+                <a href="#" title="Facebook">
+                    <div class="facebook-logo"> </div>
+                </a>
+                <a href="#" title="Instagram">
+                    <div class="instagram-logo"></div>
+                </a>
+                <a href="#" title="Twitter">
+                    <div class="twitter-logo"></div>
+                </a>
+                <div class="footer-link">
+                    <a href="#" title="Store">Store</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#" title="Coockies">Coockies</a>
+                </div>
+                <div class="footer-link" style="width: 80px; padding-left: 22px;">
+                    <a href="#" title="Privacy Policy">PrivacyPolicy</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#" title="Contact">Contact</a>
+                </div>
+            </div>
+
         </div>
         <div class="bottom-side">
             <div class="logo-img-bottom">
-                <img src="Pictures/logo3.jpg" style="width: 200px; height: 150px;" />
+                <img src="Pictures/logo2.jpeg" style="width: 220px; height: 170px;" />
             </div>
         </div>
     </div>
