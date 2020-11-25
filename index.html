@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title></title>
+    <title>Rock'N'Roll</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)" />
     <meta name="created" content="Sat, 31 Oct 2020 10:06:31 GMT" />
@@ -84,7 +84,7 @@
         }
 
         #middle {
-            background-color: rgb(238, 238, 238);
+            background-color: rgb(238, 238, 238) !important;
             width: 100%;
             height: 1500px;
             margin: auto;
@@ -119,7 +119,6 @@
             box-shadow: none;
 
         }
-
 
         input[type="text"],
         input[type="email"] {
@@ -209,6 +208,91 @@
             margin-left: 5px;
             margin-right: 5px;
         }
+
+        #middle-content {
+            width: 900px;
+            height: inherit;
+            color: inherit;
+            margin: auto;
+        }
+
+        .middle-title {
+            width: 900px;
+            height: 50px;
+            line-height: 50px;
+            color: inherit;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium' !important;
+            letter-spacing: -.5px;
+            color: #000;
+            font-size: 30px;
+            border-bottom: 4px solid black;
+        }
+
+        .middle-subtitle {
+            width: 50%;
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif !important;
+            border-bottom: 1px solid black;
+            color: #9b9b9b;
+        }
+
+        .content-upper {
+            width: 860px;
+            height: 1000px;
+            margin: auto;
+            padding: 20px;
+            float: left;
+            text-align: justify;
+            font-family: 'Times New Roman';
+            font-size: 18px;
+        }
+
+        .container {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            float: left;
+            margin: 0px 20px 0px 0px;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: 200px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #a48f64;
+        }
+
+        .container:hover .overlay {
+            opacity: 0.8;
+        }
+
+        .text {
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: 'Franklin Gothic Medium' !important;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -221,7 +305,7 @@
         </div>
         <div id="middle-up">
             <div id="buttons">
-                <div class="button center header-link"><a href="#">News</a></div>
+                <div class="button center header-link"><a href="index.html">News</a></div>
                 <div class="button center header-link"><a href="#">About</a></div>
                 <div class="button center header-link"><a href="#">Music</a></div>
                 <div class="button center header-link"><a href="#">Books</a></div>
@@ -231,6 +315,36 @@
         </div>
     </div>
     <div id="middle">
+        <div id="middle-content">
+            <div class="middle-title">News</div>
+            <div class="middle-subtitle" style="float: left;">Today: Wednesday 25th of November 2020</div>
+            <div class="middle-subtitle" style="float: right; text-align: right;">Since 1940</div>
+            <div class="content-upper">
+                <div class="container">
+                    <img src="Pictures/elvis.jpg" class="image" alt="Rock'N'Roll" title="News" />
+                    <div class="overlay">
+                        <div class="text">The place where Rock'N'Roll was borned.</div>
+                    </div>
+                </div>
+                <h1> Rock'N'Roll</h1>
+                <p><em>Rock'N'Roll</em> (often written as rock & roll, rock 'n' roll, or rock 'n roll) is a genre of
+                    popular
+                    music
+                    that evolved in the United States during the late 1940s and early 1950s.It originated from
+                    musical styles such as gospel, jump blues, jazz, boogie woogie, rhythm and blues, and country
+                    music. While rock and roll's formative elements can be heard in blues records from the 1920s, and
+                    in country records of the 1930s, the genre did not acquire its name until 1954.
+                    The phrase "rocking and rolling" originally described the movement of a ship on the ocean, but it
+                    was
+                    used by the early 20th century, both to describe a spiritual fervor and as a sexual analogy. Various
+                    gospel, blues and swing recordings used the phrase before it became used more frequently – but still
+                    intermittently – in the late 1930s and 1940s, principally on recordings and in reviews of what
+                    became
+                    known as "rhythm and blues" music aimed at black audiences. In 1951, Cleveland-based disc jockey
+                    Alan
+                    Freed began playing this music style while popularizing the term "rock and roll" to describe it.</p>
+            </div>
+        </div>
 
     </div>
     <div id="bottom">
