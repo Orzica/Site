@@ -1,9 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
-#upper-up {
+#up {
     width: 100%;
     height: 222px;
     border-bottom: 2px solid aliceblue;
@@ -12,75 +12,171 @@ body {
     background-color: white;
 }
 
-.bd {
-    width: 80px;
-    height: 22px;
-    margin: 25px 20px 0px 0px;
-    float: right;
-}
-
-#middle-up {
-    width: 600px;
-    height: 46px;
-    margin: auto;
-}
-
-#buttons {
-    width: 500px;
-    height: 50px;
-    margin: auto;
-
-}
-
-.button {
-    width: 100px;
-    height: 37px;
-    float: left;
-    padding-top: 13px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-a {
+#up a {
     text-decoration: none;
     color: #000;
+    font-family: 'Franklin Gothic Medium' !important;
 }
 
-.header-link {
-    text-decoration: none;
-    color: #000;
-}
-
-.header-link:hover {
+#up a:hover {
     text-decoration: underline 2px #a48f64;
     text-underline-position: under;
 }
 
-.center {
-    text-align: center;
+#Spotify {
+    width: 80px;
+    height: 22px;
+    margin: 25px 25px 0px 0px;
+    float: right;
 }
 
+#Spotify img {
+    width: 80px;
+    height: 22px;
+}
 
-.logo-img {
+#Logo {
     width: 200px;
     height: 170px;
     margin: auto;
 }
 
+#Logo img {
+    width: 200px;
+    height: 170px;
+}
+
+#Buttons {
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.Button {
+    width: 100px;
+    height: 37px;
+    float: left;
+    padding-top: 13px;
+    font-size: 16px;
+    letter-spacing: -.5px;
+}
+
 #middle {
     background-color: #f8f8f8 !important;
-    
     width: 100%;
     height: 1400px;
     margin: auto;
+}
+
+#middle-content {
+    width: 900px;
+    height: inherit;
+    color: inherit;
+    margin: auto;
+}
+
+#middle-title {
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    color: inherit;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium' !important;
+    letter-spacing: -.5px;
+    color: #000;
+    font-size: 30px;
+    border-bottom: 4px solid black;
+}
+
+.middle-subtitle {
+    width: 50%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    border-bottom: 1px solid black;
+    color: #9b9b9b;
+}
+
+.content-box {
+    width: 860px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    float: left;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+.content-box p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.container img {
+    width: 250px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a48f64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.container:hover .overlay {
+    opacity: 0.85;
+}
+
+#Fly {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 60px;
+}
+
+#Fly img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    text-align: left;
+}
+
+h6 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
 }
 
 #bottom {
     width: 100%;
     height: 220px;
     background-color: white;
-
 }
 
 .bottom-side {
@@ -103,11 +199,9 @@ form {
     margin: 0;
     padding: 0;
     box-shadow: none;
-
 }
 
-input[type="text"],
-input[type="email"] {
+input[type="text"], input[type="email"] {
     text-decoration: none;
     border-radius: 0px;
     background-color: rgb(255, 255, 255);
@@ -134,7 +228,6 @@ input[type="submit"] {
     cursor: pointer;
     float: left;
     border: 1px solid black;
-
 }
 
 input[type="submit"]:hover {
@@ -146,6 +239,11 @@ input[type="submit"]:hover {
     margin: 15px 0px 0px 25px;
     width: 352px;
     height: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
 }
 
 .logo-img-bottom {
@@ -193,110 +291,4 @@ input[type="submit"]:hover {
     float: left;
     margin-left: 5px;
     margin-right: 5px;
-}
-
-#middle-content {
-    width: 900px;
-    height: inherit;
-    color: inherit;
-    margin: auto;
-}
-
-.middle-title {
-    width: 900px;
-    height: 50px;
-    line-height: 50px;
-    color: inherit;
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium' !important;
-    letter-spacing: -.5px;
-    color: #000;
-    font-size: 30px;
-    border-bottom: 4px solid black;
-}
-
-.middle-subtitle {
-    width: 50%;
-    height: 25px;
-    line-height: 25px;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif !important;
-    border-bottom: 1px solid black;
-    color: #9b9b9b;
-}
-
-.content-upper {
-    width: 860px;
-    height: 300px;
-    margin: auto;
-    padding: 20px;
-    float: left;
-    text-align: justify;
-    font-family: 'Times New Roman';
-    font-size: 18px;
-}
-
-.container {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    float: left;
-    margin: 0px 20px 0px 0px;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: 200px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #a48f64;
-}
-
-.container:hover .overlay {
-    opacity: 0.85;
-}
-
-.text {
-    color: white;
-    font-size: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: 'Franklin Gothic Medium' !important;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-h1{
-    text-align: left;
-}
-
-h6 {
-    padding-top: 5px;
-    text-align: center;
-    font-size: 14px;
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    text-align: justify;
-}
-.fly {
-    width: 50px;
-    height: 50px;
-    background-image: url('Pictures/fly.png');
-    background-size: cover;
 }
