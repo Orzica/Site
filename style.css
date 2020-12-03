@@ -2,7 +2,9 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
 /*------------index.html------------*/
+
 #up {
     width: 100%;
     height: 222px;
@@ -248,12 +250,17 @@ input[type="submit"]:hover {
     color: #000;
 }
 
-.logo-img-bottom {
+#logo-img-bottom {
     width: 220px;
     height: 170px;
     float: right;
     margin-right: 140px;
     margin-top: 10px;
+}
+
+#logo-img-bottom img {
+    width: 220px;
+    height: 170px;
 }
 
 .facebook-logo {
@@ -294,9 +301,10 @@ input[type="submit"]:hover {
     margin-left: 5px;
     margin-right: 5px;
 }
+
 /*------------Music.html------------*/
 
-#middle-img{
+#middle-img {
     width: 100%;
     height: auto;
     margin: 0px;
@@ -306,7 +314,7 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 2px -2px gray;
 }
 
-#middle-img img{
+#middle-img img {
     width: 100%;
     height: auto;
 }
