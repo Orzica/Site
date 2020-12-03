@@ -104,6 +104,13 @@ body {
     float: left;
 }
 
+.content-boxes .content-box {
+    height: 400px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .content-box {
     width: 860px;
     height: 300px;
@@ -119,6 +126,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     text-align: justify;
+}
+
+.container-text {
+    width: 250px;
+    height: 400px;
 }
 
 .container {
@@ -167,7 +179,7 @@ body {
     height: 50px;
 }
 
-h1 {
+.title h1 {
     text-align: left;
 }
 
@@ -317,4 +329,11 @@ input[type="submit"]:hover {
 #middle-img img {
     width: 100%;
     height: auto;
+}
+
+.content-boxes-m {
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
 }
