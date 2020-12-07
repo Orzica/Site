@@ -246,7 +246,7 @@ input[type="submit"] {
     border: 1px solid black;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover{
     color: #fff;
     background-color: #a48f64;
 }
@@ -316,19 +316,12 @@ input[type="submit"]:hover {
 
 /*------------Music.html------------*/
 
-#middle-img {
+.middle-img img {
     width: 100%;
-    height: auto;
     margin: 0px;
     padding: 0px;
-    float: left;
     border-bottom: 2px solid aliceblue;
     box-shadow: 0 4px 2px -2px gray;
-}
-
-#middle-img img {
-    width: 100%;
-    height: auto;
 }
 
 .content-boxes-m {
@@ -336,4 +329,10 @@ input[type="submit"]:hover {
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+}
+
+/*------------Artists.html------------*/
+
+.content-box h2{
+    text-align: center;
 }
