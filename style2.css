@@ -1,0 +1,435 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------------index.html------------*/
+
+#up {
+    min-width: 100%;
+    width: 100%;
+    height: 222px;
+    border-bottom: 2px solid aliceblue;
+    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 3px;
+    background-color: white;
+}
+
+#up-up {
+    border-bottom: 1px solid rgb(211, 206, 206);
+}
+
+#up a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium' !important;
+    transition: .5s ease;
+}
+
+#up a:hover {
+    color: #a48f64;
+}
+
+#Spotify {
+    width: 80px;
+    height: 22px;
+    margin: 25px 25px 0px 0px;
+    float: right;
+}
+
+#Spotify img {
+    width: 80px;
+    height: 22px;
+}
+
+#Logo {
+    width: 200px;
+    height: 170px;
+    margin: auto;
+}
+
+#Logo img {
+    width: 170px;
+    height: 170px;
+}
+
+#Buttons {
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.Button {
+    width: 100px;
+    height: 37px;
+    float: left;
+    padding-top: 13px;
+    font-size: 16px;
+    letter-spacing: -.5px;
+}
+
+#middle {
+    background-color: #f8f8f8 !important;
+    width: 100%;
+    height: 2500px;
+    margin: auto;
+}
+
+#middle-content {
+    width: 1000px;
+    height: inherit;
+    color: inherit;
+    margin: auto;
+}
+
+#middle-title {
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    color: inherit;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium' !important;
+    letter-spacing: -.5px;
+    color: #000;
+    font-size: 30px;
+    border-bottom: 4px solid black;
+    float: left;
+}
+
+.middle-subtitle {
+    width: 50%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    border-bottom: 1px solid black;
+    color: #9b9b9b;
+    float: left;
+}
+
+.middle-area-top {
+    width: inherit;
+    height: 530px;
+    float: left;
+    margin-top: 20px;
+}
+
+.middle-area {
+    width: 280px;
+    height: 90%;
+    float: left;
+    padding: 0px 25px 25px 25px;
+    border-right: 1px solid rgb(211, 206, 206);
+    position: relative;
+}
+
+.middle-area img {
+    width: 280px;
+    height: 250px;
+}
+
+.middle-area p {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.imgaine-title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: #a48f64;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 280px;
+    height: 250px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.container img {
+    width: 280px;
+    height: 250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a48f64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.container:hover .overlay {
+    opacity: 0.7;
+}
+
+.signature {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 80%;
+    font-style: italic;
+    padding-left: 25px;
+}
+
+.middle-picture {
+    width: 1000px;
+    height: 320px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #0f161e;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    position: relative;
+}
+
+.middle-picture-title{
+    width: 100%;
+    height: 50px;
+}
+
+.middle-picture-container-top{
+    width: 260px;
+    height: 300px;
+    float: left;
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.middle-picture-container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.middle-picture-container img {
+    width: 250px;
+    height: 200px;
+}
+
+.middle-picture-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #a48f64;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.middle-picture-container:hover .middle-picture-overlay {
+    opacity: 0.2;
+}
+
+.middle-picture span {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.middle-picture img {
+    width: 250px;
+    height: 200px;
+}
+
+#bottom {
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid aliceblue;
+    box-shadow: 0 -4px 2px -2px gray;
+}
+
+#bottom-content {
+    width: 1100px;
+    height: inherit;
+    margin: auto;
+}
+
+#bottom-content img {
+    width: 200px;
+    height: 150px;
+    float: right;
+    margin-top: 50px;
+}
+
+.bottom-subcontent {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-top: 20px;
+    padding: 0px 15px 0px 0px;
+    border-right: 1px solid rgb(192, 189, 189);
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.bottom-subcontent a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.bottom-subcontent a:hover {
+    color: #a48f64;
+}
+
+.bottom-subcontent ul li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+.bottom-subcontent-buttons ul li {
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.box:hover {
+    color: #a48f64;
+    border: 2px solid #a48f64;
+}
+
+.facebook-logo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url('Pictures/facebook.png');
+    background-size: cover;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+.instagram-logo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url('Pictures/instagram.png');
+    background-size: cover;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.twitter-logo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url('Pictures/twitter.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.youtube-logo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url('Pictures/youtube.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.newsletter {
+    border-top: 1px solid white;
+    vertical-align: center;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.newsletter li {
+    display: inline;
+}
+
+.newsletter input[type="submit"] {
+    border: 2px solid white;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+::placeholder {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: grey;
+    margin-left: 10px;
+}
+
+.newsletter input[type="submit"]:hover {
+    color: #a48f64;
+    border: 2px solid #a48f64;
+}
+
+.newsletter input[type="email"] {
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 255px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#bottom-logo img {
+    width: 225px;
+    height: 300px;
+    float: left;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
